@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:LoginExample" x:Class="LoginExample.Views.LoginExamplePage">
+	<StackLayout Padding="40" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+        <Entry HorizontalOptions="FillAndExpand" Text="{Binding Email}" Placeholder="Email" />
+        <Entry HorizontalOptions="FillAndExpand" Text="{Binding Password}" IsPassword="true" Placeholder="Password" />
+        <Button Command="{Binding LoginCommand}" Text="Login" HorizontalOptions="FillAndExpand" BackgroundColor="Black" TextColor="White" />
+    </StackLayout>
+</ContentPage>
